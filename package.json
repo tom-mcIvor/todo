@@ -1,5 +1,4 @@
 {
-  "homepage": "http://tom-mcivor.github.io/todo",
   "name": "todo-full-stack",
   "version": "0.1.0",
   "description": "Todo Full Stack",
@@ -10,8 +9,6 @@
     "build:client": "npm run webpack -- --mode production",
     "build:server": "npm run knex -- migrate:latest",
     "start": "node server",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "jest",
     "test:watch": "jest --noStackTrace --watchAll",
     "dev": "run-p dev:client dev:server",
@@ -90,5 +87,8 @@
     "semi": false,
     "singleQuote": true
   },
-  "browserslist": "> 2%, not dead"
+  "browserslist": "> 2%, not dead",
+  "engines": {
+    "node": "16.17.0"
+  }
 }
